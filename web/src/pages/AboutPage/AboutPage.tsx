@@ -5,14 +5,13 @@ const AboutPage = () => {
   return (
     <>
       <MetaTags title="About" description="About page" />
-
       <h1>AboutPage</h1>
       <p>
-        Find me in <code>./web/src/pages/AboutPage/AboutPage.tsx</code>
+        Find me in  aut
       </p>
       <p>
-        My default route is named <code>about</code>, link to me with `
-        <Link to={routes.about()}>About</Link>`
+        My default route is named  link to me with <br />
+        <Link to={routes.home()}>Home</Link>
       </p>
     </>
   )
