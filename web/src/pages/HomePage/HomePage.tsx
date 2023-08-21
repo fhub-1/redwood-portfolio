@@ -1,19 +1,14 @@
-import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
+
+import ArticlesCell from 'src/components/ArticlesCell'
 
 const HomePage = () => {
   return (
     <>
       <MetaTags title="Home" description="Home page" />
 
-      <h1 className="">
-        Introduce the front-end developer and showcase their skills, with a
-        clear call-to-action (CTA) button to view the portfolio.
-      </h1>
-      <p>
-        learn more about me on my about page
-      </p>
-      <Link to={routes.about()}>About</Link>
+      <ArticlesCell />
+      <h1>hello</h1>
     </>
   )
 }
