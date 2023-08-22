@@ -1,3 +1,6 @@
+import '@radix-ui/themes/styles.css'
+
+import { Theme } from '@radix-ui/themes'
 import { hydrateRoot, createRoot } from 'react-dom/client'
 
 import App from './App'
@@ -13,5 +16,9 @@ if (redwoodAppElement.children?.length > 0) {
   hydrateRoot(redwoodAppElement, <App />)
 } else {
   const root = createRoot(redwoodAppElement)
-  root.render(<App />)
+  root.render(
+    <Theme>
+      <App />
+    </Theme>
+  )
 }
